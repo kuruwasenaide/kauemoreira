@@ -4,7 +4,7 @@ import { motion, useInView } from "motion/react";
 import { cn } from "@/lib/utils";
 
 const DEFAULT_CHARSET =
-  "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+-={}[];:,.<>/?";
+  "-.";
 
 function generateRandomCharacter(charset) {
   const index = Math.floor(Math.random() * charset.length);

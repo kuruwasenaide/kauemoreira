@@ -50,7 +50,7 @@ export default function FlareCursor() {
   const cursorStyle = isPointer ? { left: "-100px", top: "-100px" } : {};
   return (
     <div
-      className={`pointer-events-none hidden lg:block fixed z-50 ${isPointer ? "pointer" : ""}`}
+      className={`pointer-events-none hidden lg:block fixed z-100 ${isPointer ? "pointer" : ""}`}
       style={{
         ...cursorStyle,
         left: `${position.x}px`,
