@@ -22,7 +22,6 @@ export default function RootLayout({ children }) {
       >
         <FlareCursor />
         {children}
-        <Footer />
       </body>
     </html>
   );

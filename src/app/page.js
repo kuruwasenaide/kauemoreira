@@ -11,7 +11,10 @@ import {
   IconHome,
   IconNewSection,
   IconTerminal2,
+  IconBrandThreads,
 } from "@tabler/icons-react";
+import Social from "@/sections/social";
+import Footer from "@/components/footer";
 
 export default function Home() {
   const links = [
@@ -24,26 +27,18 @@ export default function Home() {
     },
  
     {
-      title: "em breve",
+      title: "social",
+      icon: (
+        <IconBrandThreads className="h-full w-full" />
+      ),
+      href: "#1",
+    },
+    {
+      title: "em breve (1)",
       icon: (
         <IconFileSad className="h-full w-full" />
       ),
       href: "#2",
-    },
-    {
-      title: "em breve",
-      icon: (
-        <IconFileSad className="h-full w-full" />
-      ),
-      href: "#3",
-    },
-    {
-      title: "instagram",
-      icon: (
-        <IconBrandInstagram className="h-full w-full" />
-      ),
-      href: "https://www.instagram.com/suspeito/",
-      newtab: true,
     },
     {
       title: "github",
@@ -51,6 +46,14 @@ export default function Home() {
         <IconBrandGithub className="h-full w-full text-neutral-100" />
       ),
       href: "https://github.com/kuruwasenaide",
+      newtab: true,
+    },
+    {
+      title: "instagram",
+      icon: (
+        <IconBrandInstagram className="h-full w-full" />
+      ),
+      href: "https://www.instagram.com/suspeito/",
       newtab: true,
     },
   ];
@@ -71,17 +74,12 @@ export default function Home() {
             items={links}
           />
         </div>
+        <div className="mt-[100vh]"><Social /></div>
 
-        <section id="2" className="relative bg-neutral-950 min-h-screen flex items-center justify-center mt-[100vh]">
-          <div className="max-w-2xl flex flex-col items-center text-center">
-            <h2 className="text-3xl font-semibold mb-2">ainda não está pronto</h2>
-            <img src="https://media.tenor.com/ufPsZFFomo4AAAAM/crying-cat-sad-cat.gif" className="w-50 md:w-full"></img>
-          </div>
+        <section id="2" className="relative bg-gray-100 text-black min-h-screen flex items-center justify-center">
+          <h2 className="text-3xl font-semibold">site incompleto<br />espero te ver em breve :)</h2>
         </section>
-
-        <section id="3" className="relative bg-gray-100 text-black min-h-screen flex items-center justify-center">
-          <h2 className="text-3xl font-semibold">mas espero te ver.<br />em breve :)</h2>
-        </section>
+        <Footer />
       </main> 
   );
 }
