@@ -5,8 +5,8 @@ import { IconBrandGithub, IconBrandInstagram, IconBrandSteam, IconBrandDiscordFi
 
 export default function Social() {
     return(
-        <section id="1" className="relative bg-neutral-950 min-h-screen flex items-center justify-center">
-          <div className="w-lg flex flex-col gap-5 items-center text-left bg-neutral-800/50 p-5 rounded-lg">
+        <section id="1" className="relative bg-neutral-950 min-h-screen flex items-center justify-center px-5">
+          <div className="w-md md:w-lg flex flex-col gap-5 items-center text-left bg-neutral-800/50 p-5 rounded-lg">
             <div className="flex items-center justify-start mr-auto text-left gap-5">
                 <div className="relative w-30 h-30">
                     <img src="/pfp.jpg" className="rounded-full w-full border-4 border-red-500/60"></img>
